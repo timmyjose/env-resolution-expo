@@ -4,10 +4,10 @@
   "main": "index.js",
   "scripts": {
     "setup": "bash scripts/setup.sh",
-    "android": "expo run:android",
-    "android:prod": "expo run:android --variant release",
-    "ios": "npx pod-install && expo run:ios",
-    "ios:prod": "npx pod-install && expo run:ios --configuration Release"
+    "android": "expo run:android --no-build-cache",
+    "android:prod": "expo run:android --no-build-cache --variant release",
+    "ios": "npx pod-install && expo run:ios --no-build-cache",
+    "ios:prod": "npx pod-install && expo run:ios --no-build-cache --configuration Release"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.17",

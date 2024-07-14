@@ -5,6 +5,9 @@ import { SENTRY_DSN } from './config/constants'
 import Main from './components/Main'
 import EnvDemo from './components/EnvDemo'
 import SentryDemo from './components/SentryDemo'
+// import { Alert } from 'react-native'
+
+// Alert.alert('nodeEnv = ', process.env.NODE_ENV)
 
 Sentry.init({
   dsn: SENTRY_DSN,

@@ -18,12 +18,25 @@
         "simulator": true
       },
       "channel": "preview-sim",
-      "env": {}
+      "autoIncrement": true,
+      "env": {
+        // "EXPO_PUBLIC_ENV_NAME": "production",
+        // "EXPO_PUBLIC_SENTRY_DSN": "https://23541fe0f755cf3ed024438a0590db6e@o235927.ingest.us.sentry.io/4507598381252608",
+        // "EXPO_PUBLIC_PROP_ONE": "production_prop_one",
+        // "EXPO_PUBLIC_PROP_TWO": "production_prop_two",
+        // "EXPO_PUBLIC_PROP_THREE": "production_prop_three"
+      }
     },
     "production": {
       "channel": "production",
       "autoIncrement": true,
-      "env": {}
+      "env": {
+        // "EXPO_PUBLIC_ENV_NAME": "production",
+        // "EXPO_PUBLIC_SENTRY_DSN": "https://23541fe0f755cf3ed024438a0590db6e@o235927.ingest.us.sentry.io/4507598381252608",
+        // "EXPO_PUBLIC_PROP_ONE": "production_prop_one",
+        // "EXPO_PUBLIC_PROP_TWO": "production_prop_two",
+        // "EXPO_PUBLIC_PROP_THREE": "production_prop_three"
+      }
     }
   },
   "submit": {

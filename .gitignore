@@ -7,8 +7,6 @@ ios
 package-lock.json
 .env*.local
 secrets
-.env.production.local
-.env.local
 
 # Expo
 .expo/
