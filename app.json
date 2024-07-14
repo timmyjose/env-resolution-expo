@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "env-resolution-expo",
+    "slug": "env-resolution-expo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.timmyjose.envresolutionexpo"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.timmyjose.envresolutionexpo"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fddb0f01-ade5-4c05-bed3-d2a1ccfb0409"
+      }
+    },
+    "owner": "timmyjose"
+  }
+}
