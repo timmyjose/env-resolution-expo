@@ -1,4 +1,4 @@
-import { View, StyleSheet, Button, TextInput } from 'react-native'
+import { View, StyleSheet, Button, Text, TextInput } from 'react-native'
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
@@ -19,8 +19,9 @@ const SentryDemo = () => {
         value={errMsg}
         onChangeText={text => setErrMsg(text)}
       />
-      <Button title='Test captureException' onPress={() => Sentry.captureException(new Error(errMsg))} />
-      <Button title='Test captureMessage' onPress={() => Sentry.captureMessage(errMsg)} />
+      <Text>Testing Sentry SourceMaps for eas updates</Text>
+      <Button title='Test captureException (1)' onPress={() => Sentry.captureException(new Error(errMsg))} />
+      <Button title='Test captureMessage (1)' onPress={() => Sentry.captureMessage(errMsg)} />
     </View>
   )
 }

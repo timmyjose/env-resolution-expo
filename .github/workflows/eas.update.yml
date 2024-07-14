@@ -55,7 +55,7 @@ jobs:
 
       - name: Upload sourcemaps to Sentry
         env:
-          SENTRY_URL: ${{ secretes.SENTRY_URL }}
+          SENTRY_URL: ${{ secrets.SENTRY_URL }}
           SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
           SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
