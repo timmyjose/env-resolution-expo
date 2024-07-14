@@ -19,8 +19,8 @@ const SentryDemo = () => {
         value={errMsg}
         onChangeText={text => setErrMsg(text)}
       />
-      <Button title='Test Sentry (captureException)' onPress={() => Sentry.captureException(new Error({errMsg}))} />
-      <Button title='Test Sentry (captureMessage)' onPress={() => Sentry.captureMessage({errMsg})} />
+      <Button title='Test captureException' onPress={() => Sentry.captureException(new Error(errMsg))} />
+      <Button title='Test captureMessage' onPress={() => Sentry.captureMessage(errMsg)} />
     </View>
   )
 }
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   input: {
     margin: 5,
     paddingLeft: 2,
-    borderColor: 'orange',
+    borderColor: 'black',
     borderWidth: 1,
     height: 40,
     width: '70%'
