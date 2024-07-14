@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "env-resolution-expo",
+    "name": "EnvResolutionExpo",
     "slug": "env-resolution-expo",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,6 +13,9 @@
     },
     "ios": {
       "supportsTablet": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      },
       "bundleIdentifier": "com.timmyjose.envresolutionexpo"
     },
     "android": {
@@ -25,11 +28,30 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "plugins": [
+      [
+        "@sentry/react-native/expo",
+        {
+          "organization": "SENTRY_ORG",
+          "project": "SENTRY_PROJECT"
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "fddb0f01-ade5-4c05-bed3-d2a1ccfb0409"
       }
     },
-    "owner": "timmyjose"
+    "owner": "timmyjose",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "enabled": true,
+      "requestHeaders": {
+        "expo-channel-name": "production"
+      },
+      "url": "https://u.expo.dev/fddb0f01-ade5-4c05-bed3-d2a1ccfb0409"
+    }
   }
 }
