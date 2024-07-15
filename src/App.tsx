@@ -5,13 +5,15 @@ import { SENTRY_DSN } from './config/constants'
 import Main from './components/Main'
 import EnvDemo from './components/EnvDemo'
 import SentryDemo from './components/SentryDemo'
-// import { Alert } from 'react-native'
-
-// Alert.alert('nodeEnv = ', process.env.NODE_ENV)
+import { getVersion, getBuildNumber} from 'react-native-device-info'
 
 Sentry.init({
   dsn: SENTRY_DSN,
+  debug: true,
   enabled: true,
+  enableNativeCrashHandling: true,
+  release: `${getVersion()} (${getBuildNumber()})}`,
+  dist: getBuildNumber(),
   integrations: [
     new Sentry.ReactNativeTracing({
       enableAppStartTracking: false
