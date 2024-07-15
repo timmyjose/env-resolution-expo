@@ -19,9 +19,9 @@ const SentryDemo = () => {
         value={errMsg}
         onChangeText={text => setErrMsg(text)}
       />
-      <Text>Testing Sentry SourceMaps for eas updates</Text>
-      <Button title='Test captureException (1)' onPress={() => Sentry.captureException(new Error(errMsg))} />
-      <Button title='Test captureMessage (1)' onPress={() => Sentry.captureMessage(errMsg)} />
+      <Text>Testing Sentry SourceMaps for eas updates with manual `release` and `dist`</Text>
+      <Button title='Test captureException (2)' onPress={() => Sentry.captureException(new Error(errMsg))} />
+      <Button title='Test captureMessage (2)' onPress={() => Sentry.captureMessage(errMsg)} />
     </View>
   )
 }
